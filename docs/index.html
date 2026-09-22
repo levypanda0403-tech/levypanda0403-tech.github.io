@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="stylesheet.css"/>
     </head>
     <body>
+        <script>
+            function toggleCompetences(){
+                const compSection = document.getElementById('competences');
+                compSection.style.display =
+                    compSection.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
         <h1>Développeur Web</h1>
 
         <h2>Informations</h2>
@@ -20,6 +27,14 @@
         <p>Le Mans - France</p>
         <h3>Mobilité</h3>
         <p>Permis B et Véhicule</p>
+        <section id="competences">
+            <h3>Compétences</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>PHP</p>
+            <p>JavaScript</p>
+        </section>
+        <button onclick="toggleCompetences()">Afficher/Masquer compétences</button>
         <a href="./site_escrime/index.html">Lien vers mon site</a>
     </body>
 
